@@ -9,6 +9,7 @@
 
 <body>
     <nav class="navbar">
+        <div class="container">
         <div class="logo">Dentica</div>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
@@ -16,10 +17,13 @@
             <li><a href="#">Pricing</a></li>
             <li><a href="#">Reviews</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="#">Book an Appointment</a></li>
+            <li><a href="#" class="appointment-btn">Book an Appointment</a></li>
         </ul>
+    </div>
     </nav>
-    <header class="hero">
+
+    <section class="hero">
+    <div class="container">
         <div class="hero-content">
             <h1>Providing top-quality dental care with a focus on your comfort and health.</h1>
             <p>Your smile is our priority - experience gentle and professional care.</p>
@@ -27,9 +31,10 @@
         <div class="appointment-form">
             <h2>Book an Appointment</h2>
             <form id="appointment-form">
-                <label for="doctor">Choose a Doctor</label>
+                <div class="form-group">
+                <label for="doctor">Select a Doctor</label>
                 <select id="doctor" required>
-                <option value="">Select</option>
+                <option value="">Select a Doctor</option>
                 <option value="dr-smith">Dr. John Smith - Dentist</option>
                 <option value="dr-carter">Dr. Emily Carter – Orthodontist</option>
                 <option value="dr-brown">Dr. Michael Brown – Endodontist</option>
@@ -40,9 +45,11 @@
                 <option value="dr-white">Dr. Sophia White – Cosmetic Dentist</option>
                 <option value="dr-anderson">Dr. James Anderson – Implant Specialist</option>
                 </select>
-                <label for="service">Choose a Service</label>
+            </div>
+                <div class="form-group">
+                <label for="service">Select a Service</label>
                 <select id="service" required>
-                <option value="">Select a service</option>
+                <option value="">Select a Service</option>
                 <option value="cleaning">Teeth Cleaning</option>
                 <option value="whitening">Teeth Whitening</option>
                 <option value="braces">Braces & Aligners</option>
@@ -53,8 +60,12 @@
                 <option value="gum-treatment">Gum Disease Treatment</option>
                 <option value="pediatric">Pediatric Dental Checkup</option>
                 </select>
+            </div>
+                <button type="submit">Continue to Booking</button>
+                <p class="form-note">We will contact you within 1-2 working days.</p>
             </form>
         </div>
-    </header>
+        </div>
+    </section>
 </body>
 </html>
