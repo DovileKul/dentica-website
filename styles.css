@@ -59,6 +59,17 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.appointment-btn:hover {
+    background-color: #D6E4EE;
+}
+
+.appointment-btn:active {
+    background-color: #D6E4EE;
+    transform: scale(0.98);
 }
 
 /* Hero Section */
@@ -129,7 +140,7 @@ body {
     color: #666;
 }
 
-button[type="submit"] {
+button {
     width: 100%;
     padding: 0.75rem;
     background-color: #284169;
@@ -140,6 +151,16 @@ button[type="submit"] {
     font-size: 1rem;
     margin-top: 1rem;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #3b5998;
+}
+
+button:active {
+    background-color: #1d2e4f;
+    transform: scale(0.98);
 }
 
 .form-note {
@@ -163,6 +184,7 @@ button[type="submit"] {
     max-width: 1200px;
     margin: 0 auto;
     flex-wrap: wrap;
+    min-height: 100%;
 }
 
 .about-content {
@@ -176,27 +198,16 @@ button[type="submit"] {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    margin-bottom: 3rem;
 }
 
 .about-content p {
     color: #284169;
-    line-height: 1.8;
+    line-height: 1.6; 
     font-size: 1.1rem;
-    margin-bottom: 2rem;
-    padding-top: 3rem;
-}
-
-.about-content button {
-    width: 100%;
-    padding: 0.75rem;
-    background-color: #284169;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-family: inherit;
-    font-size: 1rem;
-    margin-top: 1rem;
-    cursor: pointer;
+    margin-bottom: 2rem; 
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .about-info {
@@ -210,7 +221,7 @@ button[type="submit"] {
 
 .about-image {
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     border-radius: 10px;
     object-fit: cover;
 }
@@ -221,13 +232,14 @@ button[type="submit"] {
     width: 100%;
     margin-top: 2rem;
     gap: 1rem;
+    margin-bottom: 3rem;
 }
 
 .stat-card {
     background: white;
     padding: 1.5rem;
     text-align: center;
-    border-radius: 12px;
+    border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     flex: 1;
 }
@@ -254,7 +266,7 @@ button[type="submit"] {
 .doctors .container {
     max-width: 1200px;
     margin: 0 auto;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .doctors-content {
@@ -323,6 +335,7 @@ button[type="submit"] {
     justify-content: center;
     margin-top: 1rem;
     padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .dot {
@@ -339,17 +352,6 @@ button[type="submit"] {
     background: #333;
 }
 
-.doctors-content button {
-    display: inline-block;
-    background-color: #EBF2F7;
-    color: #284169;
-    padding: 0.8rem 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    font-weight: 600;
-    text-decoration: none;
-    font-size: 1rem;
-}
 
 /* Reviews */
 
