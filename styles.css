@@ -339,7 +339,7 @@ button[type="submit"] {
     background: #333;
 }
 
-.doctors-content .button {
+.doctors-content button {
     display: inline-block;
     background-color: #EBF2F7;
     color: #284169;
@@ -439,3 +439,87 @@ button[type="submit"] {
 .reviews .dot.active {
     background: #333;
 }
+
+/* Contact */
+
+.contact {
+    padding: 6rem 0;
+    background: #EBF2F7;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-content h1 {
+    color: #1d3557;
+    font-size: 28px;
+}
+
+.contact-content h3 {
+    padding-top: 2rem;
+    font-weight: bold;
+    color: #1d3557;
+}
+
+.working-hours {
+    list-style: none;
+    padding: 0;
+}
+
+.working-hours li {
+    margin-bottom: 5px;
+    padding: 0;
+    color: #1d3557;
+    line-height: 1.6;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    padding-top: 2rem;
+}
+
+.social-icons a img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1);
+}
+
+.contact-info {
+    flex: 1;
+    max-width: 55%;
+}
+
+.map {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info p {
+    line-height: 1.6;
+    margin: 8px 0;
+    color: #1d3557;
+}
+
+
