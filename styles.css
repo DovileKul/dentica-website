@@ -322,6 +322,7 @@ button[type="submit"] {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
+    padding-top: 1rem;
 }
 
 .dot {
@@ -348,4 +349,93 @@ button[type="submit"] {
     font-weight: 600;
     text-decoration: none;
     font-size: 1rem;
+}
+
+/* Reviews */
+
+.reviews {
+    padding: 6rem 0;
+    background: white;
+}
+
+.reviews .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.reviews-content {
+    margin: 0 auto 3rem;
+}
+
+.reviews-content h1 {
+    font-size: 2.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    color: #284169;
+}
+
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+}
+
+.reviews-list {
+    display: flex;
+    gap: 2rem;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.reviews-card {
+    flex: 0 0 calc(33.33% - 1.5rem); 
+    text-align: center;
+    background: #EBF2F7;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.reviews-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.reviews-card h2 {
+    color: #284169;
+    line-height: 1.6;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.reviews-card p {
+    color: #284169;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    padding-top: 1rem;
+}
+
+.reviews .dots-container {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.reviews .dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.reviews .dot.active {
+    background: #333;
 }
