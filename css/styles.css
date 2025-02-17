@@ -297,9 +297,14 @@ button:active {
 
 .doctor-list {
     display: flex;
-    gap: 2rem;
-    transition: transform 0.5s ease-in-out;
-    width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none; 
+    gap: 1.5rem;
+}
+
+.doctor-list::-webkit-scrollbar, .reviews-list::-webkit-scrollbar {
+    display: none; 
 }
 
 .doctor-card {
@@ -394,6 +399,7 @@ button:active {
     gap: 2rem;
     transition: transform 0.5s ease-in-out;
     width: 100%;
+    overflow-x: auto
 }
 
 .reviews-card {

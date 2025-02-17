@@ -114,5 +114,12 @@
             </div>
             </div>
         </section>
+        <script>
+            const params = new URLSearchParams(window.location.search);
+            const selectedDoctor = params.get('doctor');
+            const selectedService = params.get('service');
+            document.getElementById('doctor').value = selectedDoctor || '';
+            document.getElementById('service').value = selectedService || '';
+        </script>
 </body>
 </html>
