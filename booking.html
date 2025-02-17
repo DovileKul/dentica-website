@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/booking.css">
+    <title>Book an Appointment Page</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+        <div class="logo">Dentica</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    </nav>
+    <section class="appointment">
+<div class="container">
+    <div class="appointment-content">
+        <h1>Book a Visit</h1>
+        <p>We will contact you within 1–2 working days.</p>
+    </div>
+        <div class="appointment-form">
+        <form id="appointment-form">
+            <div class="form-group">
+            <label for="doctor">Select a Doctor</label>
+            <select id="doctor" required>
+            <option value="">Select a Doctor</option>
+            <option value="not-sure">I'm not sure</option>
+            <option value="dr-smith">Dr. John Smith - Dentist</option>
+            <option value="dr-carter">Dr. Emily Carter – Orthodontist</option>
+            <option value="dr-brown">Dr. Michael Brown – Endodontist</option>
+            <option value="dr-johnson">Dr. Sarah Johnson – Pediatric Dentist</option>
+            <option value="dr-lee">Dr. Daniel Lee – Oral Surgeon</option>
+            <option value="dr-martin">Dr. Olivia Martin – Prosthodontist</option>
+            <option value="dr-harris">Dr. William Harris – Periodontist</option>
+            <option value="dr-white">Dr. Sophia White – Cosmetic Dentist</option>
+            <option value="dr-anderson">Dr. James Anderson – Implant Specialist</option>
+            </select>
+        </div>
+            <div class="form-group">
+            <label for="service">Select a Service</label>
+            <select id="service" required>
+            <option value="">Select a Service</option>
+            <option value="not-sure">I'm not sure</option>
+            <option value="cleaning">Teeth Cleaning</option>
+            <option value="whitening">Teeth Whitening</option>
+            <option value="braces">Braces & Aligners</option>
+            <option value="root-canal">Root Canal Treatment</option>
+            <option value="wisdom-tooth">Wisdom Tooth Extraction</option>
+            <option value="implants">Dental Implants</option>
+            <option value="crowns">Crowns & Bridges</option>
+            <option value="gum-treatment">Gum Disease Treatment</option>
+            <option value="pediatric">Pediatric Dental Checkup</option>
+            </select>
+        </div>
+        <div class="form-row">
+        <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Your Phone</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required>
+        </div>
+    </div>
+        <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Enter your message (optional)"></textarea>
+        </div>
+        <button type="submit" class="book-btn">Book an Appointment</button>
+    </div>
+</div>
+    </section>
+        <section class="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-details">
+                        <h1>Dentica</h1>
+                        <h3>Working Hours:</h3>
+                <div class="working-time">
+                    <ul class="working-hours">
+                        <li>Monday – Friday: 9:00 AM – 6:00 PM</li>
+                        <li>Saturday: 10:00 AM – 3:00 PM</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img src="/assets/FB.svg" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="/assets/IG.svg" alt="Instagram"></a>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <a href="https://www.google.com/maps/@25.9267727,-80.2220744,16.5z?entry=ttu" target="_blank">
+                        <img src="./assets/map.png" alt="Click to view on Google Maps" class="map">
+                    </a>
+                <p><strong>Address:</strong> 152 Greenfield Avenue, Suite 10, New York, NY 10001</p>
+                <p><strong>Phone:</strong> +1 (212) 555-7890</p>
+                <p><strong>Email:</strong> contact@dentica.com</p>
+            </div>
+            </div>
+            </div>
+            </div>
+        </section>
+</body>
+</html>
