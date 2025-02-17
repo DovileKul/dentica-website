@@ -72,24 +72,24 @@ body {
     transform: scale(0.98);
 }
 
-/* Doctors */
+/* Pricing */
 
-.doctors {
+.pricing {
     padding: 6rem 0;
     background: white;
 }
 
-.doctors .container {
+.pricing .container {
     max-width: 1200px;
     margin: 0 auto;
     overflow: visible;
 }
 
-.doctors-content {
+.pricing-content {
     margin: 0 auto 3rem;
 }
 
-.doctors-content h1 {
+.pricing-content h1 {
     font-size: 2.75rem;
     font-weight: 600;
     margin-bottom: 1rem;
@@ -98,68 +98,111 @@ body {
     color: #284169;
 }
 
-.doctors-content p {
+.pricing-content p {
     color: #284169;
     line-height: 1.8;
     font-size: 1.1rem;
     margin-bottom: 2rem;
 }
 
-.carousel-container {
-    position: relative;
+.pricing-buttons {
     display: flex;
     justify-content: center;
-}
-
-.doctor-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    transition: transform 0.5s ease-in-out;
+    flex-wrap: wrap;
+}
+
+.pricing-buttons .btn {
+    width: auto;
+    padding: 0.75rem 2rem;
+}
+
+.btn {
     width: 100%;
-}
-
-.doctor-card {
-    flex: 0 0 calc(33.33% - 1.5rem); 
-    text-align: center;
-    background: #f9f9f9;
-    padding: 1.5rem;
+    padding: 0.75rem;
+    background-color: #284169;
+    color: white;
+    border: none;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.doctor-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-.doctor-card img {
-    width: 100%;
-    height: 320px; 
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.doctor-card h2 {
-    color: #284169;
-    line-height: 1.2;
+    font-family: inherit;
     font-size: 1rem;
-}
-
-.doctor-card p {
-    color: #284169;
-    font-size: 1rem;
-    margin-top: 0.5rem;
-}
-
-.dots-container {
-    display: flex;
-    justify-content: center;
     margin-top: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
+
+.btn:hover {
+    background-color: #3b5998;
+}
+
+.btn:active {
+    background-color: #1d2e4f;
+    transform: scale(0.98);
+}
+
+.pricing-list {
+    display: grid;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.pricing-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #EBF2F7;
+    color: #284169;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.pricing-item:hover {
+    transform: translateY(-5px);
+}
+
+.pricing-item h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    flex: 1;
+}
+
+.pricing-item p {
+    margin: 0 2rem;
+    font-size: 1.1rem;
+    white-space: nowrap;
+}
+
+.pricing-item .price {
+    font-size: 0 2rem;
+    color: #284169;
+    margin: 0 2rem;
+    font-weight: bold;
+}
+
+.book-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #284169;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.book-btn:hover {
+    background-color: #3b5998;
+}
+
+.book-btn:active {
+    background-color: #1d2e4f;
+    transform: scale(0.98);
+}
+
 
 /* Contact */
 
