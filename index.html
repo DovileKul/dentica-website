@@ -15,8 +15,8 @@
             <li><a href="#">Home</a></li>
             <li><a href="doctors.html">Doctors</a></li>
             <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="#">Reviews</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="index.html#reviews">Reviews</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
             <li><a href="booking.html" class="appointment-btn">Book an Appointment</a></li>
         </ul>
     </div>
@@ -85,7 +85,7 @@
                 </br>
             </br>
                 <strong>Book your appointment today and take the first step toward a healthier, more confident smile!</strong></p>
-                <button type="submit">Continue to Booking</button>
+                <button onclick="window.location.href='booking.html'">Continue to Booking</button>
             </div>
             <div class="about-info">
                 <img src="./assets/about-image.png" alt="Dentica Dentist Room" class="about-image"/>
@@ -176,10 +176,10 @@
             <span class="dot"></span>
             <span class="dot"></span>
         </div>
-        <button type="submit">Select a Doctor</button>
+        <button onclick="window.location.href='doctors.html'">Select a Doctor</button>
         </div>
     </section>
-    <section class="reviews">
+    <section id="reviews" class="reviews">
         <div class="container">
             <div class="reviews-content">
                 <h1>Reviews</h1>
@@ -216,7 +216,7 @@
             </div>
         </div>
     </section>
-    <section class="contact">
+    <section id="contact" class="contact">
         <div class="container">
             <div class="contact-content">
                 <div class="contact-details">
@@ -248,6 +248,6 @@
         </div>
         </div>
     </section>
-    <script src="script.js" defer></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>

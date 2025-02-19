@@ -53,3 +53,4 @@ document.addEventListener('DOMContentLoaded', () => {
     startHoverCarousel('.doctor-list', '.doctor-dot');
     startHoverCarousel('.reviews-list', '.review-dot');
 });
+
