@@ -548,4 +548,753 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Media Queries for phones */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lora', serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    background: transparent; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.hero, .navbar {
+    background: linear-gradient(to left, #87A2C8 0%, #284169 100%);
+    color: white;
+}
+
+.navbar {
+    background-color: #284169;
+    padding: 1rem 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.nav-links {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.appointment-btn {
+    background-color: #EBF2F7;
+    color: #284169 !important;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.appointment-btn:hover {
+    background-color: #D6E4EE;
+}
+
+.appointment-btn:active {
+    background-color: #D6E4EE;
+    transform: scale(0.98);
+}
+
+/* Hero Section */
+
+.hero {
+    background: linear-gradient(to right, #284169, #87A2C8);
+    padding: 6rem 0;
+    min-height: 80vh;
+}
+
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
+.hero-content {
+    flex: 1;
+    color:white;
+}
+
+.hero-content h1 {
+    font-size: 2.75rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    max-width: 600px;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    max-width: 500px;
+}
+
+.appointment-form {
+    background: #EBF2F7;
+    padding: 2.5rem;
+    border-radius: 10px;
+    width: 450px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-form h2 {
+    color: #284169;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 1.75rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #284169;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-family: inherit;
+    color: #666;
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #284169;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #3b5998;
+}
+
+button:active {
+    background-color: #1d2e4f;
+    transform: scale(0.98);
+}
+
+.form-note {
+    text-align: center;
+    color: #666;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+/* About Section */
+
+.about {
+    padding: 6rem 0;
+    background: white
+}
+
+.about .container {
+    display: flex;
+    align-items: stretch;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    min-height: 100%;
+}
+
+.about-content {
+    background: #EBF2F7;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    flex: 1.2;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.about-content p {
+    color: #284169;
+    line-height: 1.6; 
+    font-size: 1.1rem;
+    margin-bottom: 2rem; 
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.about-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    min-height: 100%;
+    align-self: stretch;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.about-experience {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2rem;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.stat-card {
+    background: white;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    flex: 1;
+}
+
+.stat-card h1 {
+    color: #284169;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Doctors Section */
+
+.doctors {
+    padding: 6rem 0;
+    background: white;
+}
+
+.doctors .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: visible;
+}
+
+.doctors-content {
+    margin: 0 auto 3rem;
+}
+
+.doctors-content h1 {
+    font-size: 2.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    max-width: 600px;
+    color: #284169;
+}
+
+.doctors-content p {
+    color: #284169;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.carousel-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.doctor-list {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none; 
+    gap: 1.5rem;
+}
+
+.doctor-list::-webkit-scrollbar, .reviews-list::-webkit-scrollbar {
+    display: none; 
+}
+
+.doctor-card {
+    flex: 0 0 calc(33.33% - 1.5rem); 
+    text-align: center;
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.doctor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.doctor-card img {
+    width: 100%;
+    height: 320px; 
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.doctor-card h2 {
+    color: #284169;
+    line-height: 1.2;
+    font-size: 1rem;
+}
+
+.doctor-card p {
+    color: #284169;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.dots-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.dot.active {
+    background: #333;
+}
+
+
+/* Reviews */
+
+.reviews {
+    padding: 6rem 0;
+    background: white;
+}
+
+.reviews .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.reviews-content {
+    margin: 0 auto 3rem;
+}
+
+.reviews-content h1 {
+    font-size: 2.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    color: #284169;
+}
+
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+}
+
+.reviews-list {
+    display: flex;
+    gap: 2rem;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    overflow-x: auto
+}
+
+.reviews-card {
+    flex: 0 0 calc(33.33% - 1.5rem); 
+    text-align: center;
+    background: #EBF2F7;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.reviews-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.reviews-card h2 {
+    color: #284169;
+    line-height: 1.6;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.reviews-card p {
+    color: #284169;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    padding-top: 1rem;
+}
+
+.reviews .dots-container {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.reviews .dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.reviews .dot.active {
+    background: #333;
+}
+
+/* Contact */
+
+.contact {
+    padding: 6rem 0;
+    background: #EBF2F7;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-content h1 {
+    color: #1d3557;
+    font-size: 28px;
+}
+
+.contact-content h3 {
+    padding-top: 2rem;
+    font-weight: bold;
+    color: #1d3557;
+}
+
+.working-hours {
+    list-style: none;
+    padding: 0;
+}
+
+.working-hours li {
+    margin-bottom: 5px;
+    padding: 0;
+    color: #1d3557;
+    line-height: 1.6;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    padding-top: 2rem;
+}
+
+.social-icons a img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1);
+}
+
+.contact-info {
+    flex: 1;
+    max-width: 55%;
+}
+
+.map {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info p {
+    line-height: 1.6;
+    margin: 8px 0;
+    color: #1d3557;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Media Queries for phones */
+
+@media (max-width: 767px) {
+    .container {
+        width: 95%;
+        padding: 0 0.5rem;
+    }
+    
+    .navbar {
+        padding: 0.75rem 0;
+    }
+    
+    .logo {
+        font-size: 1.2rem;
+    }
+    
+    .nav-links {
+        gap: 0.75rem;
+    }
+    
+    .nav-links a {
+        font-size: 0.8rem;
+    }
+    
+    .appointment-btn {
+        display: none;
+    }
+
+    .hero {
+        padding-top: 6rem; 
+        min-height: auto;
+        padding-bottom: 3rem;
+    }
+    
+    .hero .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+    }
+    
+    .hero-content {
+        flex: none;
+        text-align: center;
+        padding: 0 0.5rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.8rem;
+        margin: 0 auto 1rem;
+        max-width: 100%;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .appointment-form {
+        width: 100%;
+        max-width: 100%;
+        padding: 1.5rem;
+    }
+    
+    .appointment-form h2 {
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .form-group {
+        margin-bottom: 1.25rem;
+    }
+
+    .about {
+        padding: 3rem 0;
+    }
+    
+    .about .container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .about-content {
+        flex: none;
+        max-width: 100%;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .about-content p {
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+        padding: 0.5rem 0;
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+    
+    .about-image {
+        height: auto;
+        max-height: 300px;
+    }
+    
+    .about-experience {
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+    }
+    
+    .stat-card {
+        margin-bottom: 1rem;
+    }
+
+    .doctor-card,
+    .reviews-card {
+        flex: 0 0 100%;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-info {
+        max-width: 100%;
+    }
+}
+
+/* Media Queries for tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .hero .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 3rem;
+    }
+    
+    .hero-content {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .hero-content h1, .hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav-links {
+        gap: 1rem; 
+    }    
+    
+    .appointment-btn {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .appointment-form {
+        width: 100%;
+        max-width: 500px;
+    }
+    
+    .about .container {
+        gap: 2rem;
+    }
+    
+    .about-content {
+        max-width: 100%;
+    }
+
+    .doctor-card,
+    .reviews-card {
+        flex: 0 0 48%;
+    }
+
+    .contact-content {
+        gap: 2rem;
+    }
+}
+
+/* Media Queries for desktop */
+@media (min-width: 1025px) {
+    .container {
+        width: 90%;
+    }
+
+    .hero-content h1 {
+        font-size: 2.75rem;
+    }
+
+    .appointment-form {
+        width: 450px;
+    }
+
+    .doctor-card,
+    .reviews-card {
+        flex: 0 0 calc(33.33% - 1.5rem);
+    }
+}
 

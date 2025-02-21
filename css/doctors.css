@@ -256,3 +256,58 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Media Queries for phones */
+
+@media (max-width: 767px) {
+    .container {
+        width: 95%;
+        padding: 0 0.5rem;
+    }
+    
+    .navbar {
+        padding: 0.5rem 0;
+    }
+    
+    .logo {
+        font-size: 1.2rem;
+        margin-right: 0.5rem;
+    }
+    
+    .nav-links {
+        gap: 0.5rem;
+    }
+    
+    .nav-links a {
+        font-size: 0.8rem;
+    }
+    
+    .appointment-btn {
+        display: inline-block;
+        margin-left: auto;
+        text-align: center;
+    }
+
+    .doctor-list {
+        grid-template-columns: 1fr; 
+    }
+
+    .doctor-card img {
+        height: 250px;
+    }
+
+    .doctors-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .doctors-content p {
+        font-size: 1rem;
+    }
+}
+
+/* Media Queries for tablets */
+
+@media (max-width: 1024px) {
+    .doctor-list {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}

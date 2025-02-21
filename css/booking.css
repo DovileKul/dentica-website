@@ -246,3 +246,115 @@ select, input, textarea {
 html {
     scroll-behavior: smooth;
 }
+
+/* Media Queries for phones */
+
+@media (max-width: 767px) {
+    .container {
+        width: 95%;
+        padding: 0 0.5rem;
+    }
+    
+    .navbar {
+        padding: 0.5rem 0;
+    }
+    
+    .logo {
+        font-size: 1.2rem;
+        margin-right: 0.5rem;
+    }
+    
+    .nav-links {
+        gap: 0.5rem;
+    }
+    
+    .nav-links a {
+        font-size: 0.8rem;
+    }
+    
+    .appointment-btn {
+        display: inline-block;
+        margin-left: auto;
+        text-align: center;
+    }
+
+    .appointment {
+        padding: 4rem 0;
+    }
+
+    .appointment-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .appointment-content p {
+        font-size: 1rem;
+    }
+
+    .appointment-form {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .form-group {
+        margin-bottom: 1rem;
+    }
+    
+    .form-group label {
+        margin-bottom: 0.3rem;
+        font-size: 0.9rem;
+    }
+    
+    select, input, textarea {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+    
+    .book-btn {
+        padding: 0.7rem;
+        margin-top: 0.5rem;
+    }
+ 
+    .appointment .container {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+/* Media Queries for tablets */
+
+@media (max-width: 1024px) {
+    .container {
+        width: 95%;
+    }
+
+    .navbar {
+        padding: 0.75rem 0;
+    }
+
+    .appointment-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .appointment-content p {
+        font-size: 1.05rem;
+    }
+
+    .appointment-form {
+        width: 90%;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .contact-content {
+        gap: 30px;
+    }
+    
+    .contact-info {
+        max-width: 50%;
+    }
+}
