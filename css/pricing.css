@@ -446,10 +446,3 @@ html {
 }
 
 
-/* Media Queries for desktop */
-
-@media (min-width: 1025px) {
-    .pricing-list {
-        grid-template-columns: repeat(3, 1fr); 
-    }
-}

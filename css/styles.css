@@ -1228,6 +1228,7 @@ html {
 }
 
 /* Media Queries for tablets */
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .hero .container {
         flex-direction: column;
@@ -1279,6 +1280,7 @@ html {
 }
 
 /* Media Queries for desktop */
+
 @media (min-width: 1025px) {
     .container {
         width: 90%;
